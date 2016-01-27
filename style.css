@@ -1,0 +1,56 @@
+.container {
+  margin-top: 100px;
+}
+form {
+  margin: 50px;
+}
+.progress-box {
+  background-color: #ccc;
+  height: 25px;
+  width: 350px;
+  padding: 5px;
+  margin: 0 auto;         
+  border-radius: 5px;
+  display: none;
+}
+.progress-bar {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  border-radius: 3px;
+  background-color: #0177c1; 
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .3) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%,
+                        transparent 75%, transparent);
+  background-size: 30px 30px;
+  -webkit-transition: width .5s ease-in-out ;
+  -moz-transition: width .5s ease-in-out ;
+  -ms-transition: width .5s ease-in-out ;
+  -o-transition: width .5s ease-in-out ;
+  transition: width .5s ease-in-out ;
+  -webkit-animation: animate-stripes 5s linear infinite;
+  animation: animate-stripes 5s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {background-position: 0 0;}
+  100% { background-position: 60px 0px; }
+}
+@keyframes animate-stripes {
+  0% {background-position: 0 0;}
+  100% { background-position: 60px 0px; }
+}
+.upload-preview {
+  margin-top: 50px;
+}
+.upload-preview .preview {
+  width: 50%;
+  height: 100px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+.upload-preview .preview img {
+  width: auto;
+  height: 100%;
+  margin-right: 50px;
+}
